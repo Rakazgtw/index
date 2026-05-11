@@ -1,56 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Belajar Membuat Form</title>
+    <title>Belajar Box CSS</title>
     <style>
-        body {
-           background-image: url(https://i.pinimg.com/736x/57/ce/cb/57cecb198ee698ced4ab03aa4aa4ffc8.jpg);
-           background-size: 500px;
+        /* Ini adalah bagian CSS untuk menghias kotak */
+        .kotak-profil {
+            background-color: rgb(47, 146, 180); /* Warna latar */
+            width: 500px;               /* Lebar kotak */
+            padding: 20px;              /* Jarak di dalam kotak */
+            border: 5px solid rgb(0, 0, 0);     /* Garis pinggir */
+            border-radius: 15px;        /* Membuat sudut melengkung */
+            text-align: center;         /* Teks di tengah */
+            margin: 50px auto;          /* Kotak berada di tengah halaman */
+            font-family: sans-serif;
         }
-        .kotak-login {
+
+        .foto-dummy {
+            object-fit: cover;
             background-color: white;
-            width: 350px;
-            padding: 30px;
-            margin: 100px auto; /* Posisi di tengah */
-            border-radius: 10px;
-            box-shadow: 0px 5px 15px rgba(0,0,0,0.1); /* Efek bayangan estetik */
-            text-align: center;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border-radius: 50%;         /* Membuat lingkaran */
+            line-height: 100px;         /* Agar teks di tengah lingkaran */
         }
-        /* CSS KHUSUS UNTUK KOTAK INPUT */
-        input {
-            width: 90%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-        /* CSS KHUSUS UNTUK TOMBOL */
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #0866ff; /* Warna biru tombol sosmed */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
+
+        img {
+          width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border-radius: 50%;         /* Membuat lingkaran */
+            line-height: 100px;    
         }
     </style>
 </head>
 <body>
 
-    <div class="kotak-login">
-        <h2>Pendaftaran Akun Baru</h2>
-        
-        <form>
-            <input type="text" placeholder="Siapa ini?">
-            <input type="password" placeholder="Rahasia">
-             <input type="date" placeholder="Rahasia">
-            <button type="button">Buat Akun</button>
-        </form>
-
+    <div class="kotak-profil">
+        <div class="foto-dummy"><img src="https://images.pexels.com/photos/20457106/pexels-photo-20457106.jpeg"></div>
+        <h1>Rakazgtw</h1>
+        <p>seorang yg
+             pintar</p>
+        <button>Kenali Saya</button>
     </div>
 
 </body>
